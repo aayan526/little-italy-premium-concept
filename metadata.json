@@ -1,0 +1,6 @@
+{
+  "name": "Little Italy Restaurant & Pizzeria",
+  "description": "San Antonio's authentic family-owned Italian restaurant and pizzeria since 1983. Founded by the Visocaro family from Palermo, Sicily. Demo concept website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
