@@ -114,9 +114,9 @@ export const HoursAndLocation: React.FC = () => {
         </div>
 
         {/* 2-Column Split: Hours & Details Left, Map Right */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           {/* Left Column: Hours Card & Address */}
-          <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
+          <div className="lg:col-span-5 w-full min-w-0 flex flex-col space-y-6">
             {/* Live Status Pill */}
             <div className="scroll-reveal p-5 rounded-xl bg-white border border-stone-200/80 shadow-sm flex items-center justify-between">
               <div className="flex items-center gap-3">
@@ -218,7 +218,7 @@ export const HoursAndLocation: React.FC = () => {
           </div>
 
           {/* Right Column: Embedded Google Map Iframe */}
-          <div className="lg:col-span-7 scroll-reveal rounded-2xl overflow-hidden border border-stone-200/80 shadow-md relative min-h-[380px] lg:min-h-[500px] bg-stone-100">
+          <div className="lg:col-span-7 w-full min-w-0 scroll-reveal rounded-2xl overflow-hidden border border-stone-200/80 shadow-md relative min-h-[380px] lg:min-h-[500px] bg-stone-100">
             <iframe
               title="Little Italy Restaurant & Pizzeria Google Map Location"
               src="https://maps.google.com/maps?q=824+Afterglow+St,+San+Antonio,+TX+78216&t=&z=15&ie=UTF8&iwloc=&output=embed"

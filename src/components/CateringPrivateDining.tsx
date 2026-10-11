@@ -22,46 +22,49 @@ export const CateringPrivateDining: React.FC = () => {
           </p>
         </div>
 
-        {/* 2-Column Split: Services & Offerings */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch mb-16">
+        {/* 2-Column Split: Services & Offerings (Strictly isolated side-by-side layout, zero overlap) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start mb-16">
           {/* Left Column: Atmospheric Private Dining Feature */}
-          <div className="lg:col-span-7 scroll-reveal rounded-2xl overflow-hidden relative shadow-lg group aspect-[16/10]">
-            <img
-              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
-              alt="Private dining room at Little Italy Restaurant"
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-104"
-              loading="lazy"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/20 flex flex-col justify-end p-8 text-white">
-              <span className="text-xs uppercase tracking-widest font-semibold text-[#C59B27] mb-1">
-                Warm Italian Atmosphere
-              </span>
-              <h3 className="text-2xl sm:text-3xl font-bold font-['Raleway'] mb-2">
-                Semi-Private Dining for Up to 50 Guests
-              </h3>
-              <p className="text-stone-300 text-sm max-w-lg leading-relaxed mb-4">
-                Enjoy personalized banquet menus, dedicated staff, and customized Italian wine pairings in our welcoming San Antonio dining rooms.
-              </p>
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={() => scrollToElement('reservations')}
-                  className="px-5 py-2.5 rounded-md bg-[#C0392B] hover:bg-[#96281B] text-white text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
-                >
-                  Request Private Space
-                </button>
+          <div className="lg:col-span-7 w-full min-w-0 flex flex-col">
+            <div className="scroll-reveal w-full rounded-2xl overflow-hidden relative shadow-lg group aspect-[16/11] min-h-[300px] sm:min-h-[380px]">
+              <img
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+                alt="Private dining room at Little Italy Restaurant"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-104"
+                loading="lazy"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/20 flex flex-col justify-end p-6 sm:p-8 text-white">
+                <span className="text-xs uppercase tracking-widest font-semibold text-[#C59B27] mb-1">
+                  Warm Italian Atmosphere
+                </span>
+                <h3 className="text-2xl sm:text-3xl font-bold font-['Raleway'] mb-2">
+                  Semi-Private Dining for Up to 50 Guests
+                </h3>
+                <p className="text-stone-300 text-xs sm:text-sm max-w-lg leading-relaxed mb-4">
+                  Enjoy personalized banquet menus, dedicated staff, and customized Italian wine pairings in our welcoming San Antonio dining rooms.
+                </p>
+                <div className="flex items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() => scrollToElement('reservations')}
+                    className="px-5 py-2.5 rounded-md bg-[#C0392B] hover:bg-[#96281B] text-white text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
+                  >
+                    Request Private Space
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Right Column: Key Event Capabilities */}
-          <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
-            <div className="scroll-reveal bg-white p-6 rounded-xl border border-stone-200/80 shadow-sm" data-delay="0.1">
+          <div className="lg:col-span-5 w-full min-w-0 flex flex-col gap-5 sm:gap-6">
+            <div className="scroll-reveal bg-white p-6 sm:p-7 rounded-xl border border-stone-200/80 shadow-sm w-full min-w-0" data-delay="0.1">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-9 h-9 rounded-md bg-[#C0392B]/10 text-[#C0392B] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-md bg-[#C0392B]/10 text-[#C0392B] flex items-center justify-center shrink-0">
                   <Users className="w-5 h-5" />
                 </div>
-                <h4 className="text-lg font-bold text-[#1C1917] font-['Raleway']">
+                <h4 className="text-base sm:text-lg font-bold text-[#1C1917] font-['Raleway']">
                   Family Celebrations & Graduations
                 </h4>
               </div>
@@ -70,12 +73,12 @@ export const CateringPrivateDining: React.FC = () => {
               </p>
             </div>
 
-            <div className="scroll-reveal bg-white p-6 rounded-xl border border-stone-200/80 shadow-sm" data-delay="0.2">
+            <div className="scroll-reveal bg-white p-6 sm:p-7 rounded-xl border border-stone-200/80 shadow-sm w-full min-w-0" data-delay="0.2">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-9 h-9 rounded-md bg-[#5B6A42]/10 text-[#5B6A42] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-md bg-[#5B6A42]/10 text-[#5B6A42] flex items-center justify-center shrink-0">
                   <Utensils className="w-5 h-5" />
                 </div>
-                <h4 className="text-lg font-bold text-[#1C1917] font-['Raleway']">
+                <h4 className="text-base sm:text-lg font-bold text-[#1C1917] font-['Raleway']">
                   Off-Site Catering Trays
                 </h4>
               </div>
@@ -84,12 +87,12 @@ export const CateringPrivateDining: React.FC = () => {
               </p>
             </div>
 
-            <div className="scroll-reveal bg-white p-6 rounded-xl border border-stone-200/80 shadow-sm" data-delay="0.3">
+            <div className="scroll-reveal bg-white p-6 sm:p-7 rounded-xl border border-stone-200/80 shadow-sm w-full min-w-0" data-delay="0.3">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-9 h-9 rounded-md bg-[#C59B27]/10 text-[#C59B27] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-md bg-[#C59B27]/10 text-[#C59B27] flex items-center justify-center shrink-0">
                   <GlassWater className="w-5 h-5" />
                 </div>
-                <h4 className="text-lg font-bold text-[#1C1917] font-['Raleway']">
+                <h4 className="text-base sm:text-lg font-bold text-[#1C1917] font-['Raleway']">
                   Beer & Wine Pairings
                 </h4>
               </div>

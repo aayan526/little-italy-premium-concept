@@ -117,7 +117,7 @@ export const ReservationSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Context & Guidelines */}
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-5 w-full min-w-0">
             <div className="scroll-reveal flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#C0392B] mb-2">
               <span>Table Booking & Special Orders</span>
               <span aria-hidden="true">·</span>
@@ -168,7 +168,7 @@ export const ReservationSection: React.FC = () => {
           </div>
 
           {/* Right Column: Form or Confirmation Card */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 w-full min-w-0">
             <div className="scroll-reveal bg-white rounded-2xl p-7 sm:p-9 shadow-lg border border-stone-200/80">
               {confirmedBooking ? (
                 /* End-to-End Confirmed State */

@@ -22,9 +22,9 @@ export const OurStory: React.FC = () => {
         </div>
 
         {/* 2-Column Split: Visual Narrative & Core Values */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-20">
           {/* Left Column: Authentic Photography Stack */}
-          <div className="lg:col-span-6 flex flex-col justify-between">
+          <div className="lg:col-span-6 w-full min-w-0 flex flex-col justify-between">
             <div className="scroll-reveal relative rounded-xl overflow-hidden shadow-lg border border-stone-200/60 aspect-[4/3] group">
               <img
                 src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80"
@@ -58,7 +58,7 @@ export const OurStory: React.FC = () => {
           </div>
 
           {/* Right Column: Values & Craft Pillars */}
-          <div className="lg:col-span-6 flex flex-col justify-center space-y-8">
+          <div className="lg:col-span-6 w-full min-w-0 flex flex-col justify-center space-y-8">
             <div className="scroll-reveal flex items-start gap-4" data-delay="0.1">
               <div className="w-12 h-12 rounded-lg bg-[#C0392B]/10 text-[#C0392B] flex items-center justify-center shrink-0 mt-1">
                 <Sparkles className="w-6 h-6" />

@@ -79,8 +79,8 @@ export const ContactSection: React.FC = () => {
         </div>
 
         {/* 2-Column Split: Contact Details & Quick Message Form */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          <div className="lg:col-span-5 space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+          <div className="lg:col-span-5 w-full min-w-0 space-y-6">
             <div className="scroll-reveal bg-white p-7 rounded-xl border border-stone-200/80 shadow-sm">
               <h3 className="font-bold text-lg text-stone-900 mb-4 font-['Raleway']">
                 Call Us Directly
@@ -129,7 +129,7 @@ export const ContactSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 w-full min-w-0">
             <div className="scroll-reveal bg-white p-7 sm:p-9 rounded-xl border border-stone-200/80 shadow-sm">
               <h3 className="font-bold text-lg text-stone-900 mb-1 font-['Raleway']">
                 Send an Inquiry or Feedback
